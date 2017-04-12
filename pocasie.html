@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<body background="123.png"></body>
+
+<head>
+<style>
+h1 {
+    text-align: center;
+}
+
+p.date {
+    text-align: right;
+}
+
+p.main {
+    text-align: justify;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Počasie</title>
+</head>
+
+<script src="post.js"></script>
+<script src="weather.css"></script>
+
+<body>
+	 <div id="center"></div>
+		
+	<br>
+		
+	<br>
+<h1>
+		<B><label>Zadaj mesto</label></B>
+		<input type="text" size="25" id="citytxt" value=""> 
+		<p>
+		<button onclick="cityup()" class="w3-btn w3-white w3-border w3-border-red w3-round-large">Odoslať</button>
+		
+		</p>
+	<br>
+	<br>
+
+<script src="weather.js"></script>
+
+	<div class="weatherAPI">
+		<div class="location"><span id="location">Mesto</span></div> 
+		<div class="temperature"><span id="temperature">0</span>&deg; F </div>    
+		<div class="humidity">
+			<span id="humidity">0</span>% Vlhkosť 
+		</div>
+		<div class="wind">
+			<span id="wind">0</span> mph <span id="direction">0 </span>&deg;
+		</div>
+	</div>
+<h1>
+<br>
+
+<form>
+	
+		<legend>
+			
+		</legend>
+		
+			
+			
+		
+			<span id="resp"></span>
+	 </fieldset>
+</form>
+
+</body>
+
+</html>
